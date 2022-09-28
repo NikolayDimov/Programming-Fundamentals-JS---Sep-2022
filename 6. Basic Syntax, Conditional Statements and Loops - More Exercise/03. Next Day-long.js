@@ -1,0 +1,16 @@
+function nextDay(inputYear, inputMonth, inputDay) {
+    let year = Number(inputYear);
+    let month = Number(inputMonth) - 1;
+    let day = Number(inputDay);
+
+    let date = new Date (year, month, day);
+    let nextDate = new Date (date);
+    nextDate.setDate(date.getDate() + 1);
+    let outputYear = nextDate.getFullYear();
+    let outputMonth = nextDate.getMonth() + 1;
+    let ouputDay = nextDate.getDate();
+
+    console.log(`${outputYear}-${outputMonth}-${ouputDay}`);
+}
+nextDay(2016, 9, 30);
+nextDay(2020, 3, 24);
