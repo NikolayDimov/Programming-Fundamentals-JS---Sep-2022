@@ -1,16 +1,17 @@
 function sumEvenNum(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = Number(arr[i]);
-    }
+    // for (let i = 0; i < arr.length; i++) {
+    //     arr[i] = Number(arr[i]);
+    // }
     
-    let sum = 0;
+    let evenSum = 0;
 
-    for (let num of arr) {
-        if (num % 2 == 0) {
-            sum += num;
+    for (let numText of arr) {
+        let num = Number(numText);
+            if (num % 2 == 0) {
+            evenSum += num;
         }
     }
-    console.log(sum); 
+    console.log(evenSum); 
 }
 
 sumEvenNum(['1','2','3','4','5','6']);

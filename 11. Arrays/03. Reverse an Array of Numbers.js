@@ -61,3 +61,16 @@ console.log('---');
 reverse3(4, [-1, 20, 99, 5]);
 console.log('---');
 reverse3(2, [66, 43, 75, 89, 47]);
+
+//_________________________________
+function reverse4(n, arr) {
+    let reversedArr = arr.reverse();
+    let result = reversedArr.slice(-n)
+    console.log(result.join(' '));
+}
+
+reverse4(3, [10, 20, 30, 40, 50]);
+console.log('---');
+reverse4(4, [-1, 20, 99, 5]);
+console.log('---');
+reverse4(2, [66, 43, 75, 89, 47]);
